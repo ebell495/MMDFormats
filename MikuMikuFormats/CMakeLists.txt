@@ -1,3 +1,4 @@
+project(MikuMikuFormats)
 cmake_minimum_required(VERSION 3.1)
 
 set(CMAKE_CXX_STANDARD 14)
@@ -9,8 +10,6 @@ set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
 find_package(ICU COMPONENTS uc io REQUIRED)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH_BACKUP})
-
-project(MikuMikuFormats)
 
 include_directories(${CMAKE_SOURCE_DIR})
 include_directories(${ICU_INCLUDE_DIRS})
